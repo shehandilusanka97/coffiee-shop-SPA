@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee pos system</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body background="images/image-from-rawpixel-id-2354039-jpeg.jpg">
+    <nav>
+        <img src="images/coffee-shop-logo-png-1.jpg"  style="width:180px;height:150px;">
+
+        <ul>
+            <li><a onclick="homeClick()"><i class="fas fa-house-damage"></i>HOME</a></li>
+            <li><a onclick="customerClick()"><i class="fas fa-file-alt"></i>CUSTOMER MANAGEMENT</a></li>
+            <li><a onclick="itemClick()"><i class="fas fa-money-check-alt"></i>ITEM MANAGEMENT</a></li>
+            <li><a onclick="orderClick()"><i class="fas fa-truck-loading"></i>PLACE ORDER</a></li>
+        </ul>
+    </nav>
+    <div id="home">
+        <img src="images/Coffee-Shop-main-Image-1236x800.jpg">
+    </div>
+
+    <div id="customer">
+        <div class="box">
+            <form style="margin-top: 10px">
+                <input type="text" id="tt" placeholder="Search a Customer">
+                <input type="submit" id="sub" value="search">
+        </form>
+            
+        </div>
+        <div class="form">
+            <form id="registration">
+                <fieldset>
+                    <legend id="title"><i class="fas fa-male"></i> ADD A NEW CUSTOMER <i class="fas fa-male"></i></legend>
+                    <input type="text" name="fname" id="button" placeholder="Name"><br><br>
+                    <input type="text" name="lname" id="button" placeholder="Age"><br><br>
+                    <input type="text" name="address" id="button" placeholder="Salary"><br><br>
+                    <input type="text" name="email" id="button" placeholder="Address"><br><br>
+
+                    <select id="ph">
+                        <option>+91</option>
+                        <option>+92</option>
+                        <option>+93</option>
+                        <option>+94</option>
+                    </select>
+                    <input type="number" name="num" placeholder="Enter mobile number" id="phone"><br><br>
+
+                    <input type="radio" name="gender" id="rd"> <span id="but">Male</span>
+                    <input type="radio" name="gender" id="rx"> <span id="fem">Female</span> <br><br>
+
+
+                </fieldset>
+                 </form>
+             </div>
+             <table style="width:100%; border: 1px solid white; border-collapse: collapse;border-spacing: 5px; margin-bottom: 100px;font-size:
+             25px;font-weight: bold;color: white;margin-top: 50px;background-color: #6D4C41">
+             <tr>
+                 <th>Name</th>
+                 <th>Age</th>
+                 <th>Salary</th>
+                 <th>Address</th>
+             </tr>
+                 
+             </table>
+        
+    </div>   
+    </div>
+<div id="item">
+    <div class="box">
+        <form style="margin-top:10px">
+            <input type="text" id="tt" placeholder="Search an ITEM">
+            <input type="submit" id="sub" placeholder="Search">
+        </form>
+    </div>
+    <div class="form">
+        <form id="registration">
+            <fieldset>
+                <legend id="tittle"><i class="fas fa-item"></i>>ITEM <i class="fas fa-item"></i></legend>
+                <input type="text" name="fname" id="button" placeholder="Name"><br><br>
+                <input type="text" name="lname" id="button" placeholder="Price"><br><br>
+                <input type="text" name="address" id="button" placeholder="Quantity"><br><br>
+
+                <div class="btn-group">
+                    <button>Register</button>
+                    <button>Update</button>
+                    <button>Delete</button>
+                    <button>Reload</button>
+                    
+                </div>  
+            </fieldset>
+        </form>
+    </div>
+
+    <table style="width:100%; border: 1px solid white; border-collapse: collapse;border-spacing: 5px; margin-bottom:
+     100px;font-size: 25px;font-weight: bold;color: white;margin-top: 50px;background-color: #6D4C41">
+     <tr>
+         <th>Name</th>
+         <th>Price</th>
+         <th>Quantity</th>
+        
+     </tr>
+
+        
+    </table>
+    
+</div>
+<div id="order">
+    <div class="box">
+        <form style="margin-top:10px">
+            <input type="text" id="tt" placeholder="Search an ITME">
+            <input type="submit" id="sub" value="Search">
+        </form>
+    </div>
+    <div class="form">
+        <form id="registration">
+            <fieldset>
+                <legend id="tittle"><i class="fas fa-item"></i>PLACE ORDER <i class="fas fa-item"></i></legend>
+                <input type="text" name="fname" id="button" placeholder="Date"><br><br>
+                <input type="text" name="lname" id="button" placeholder="Order ID"><br><br>
+                <input type="text" name="adress" id="button" placeholder="Customer NAme/ID"><br><br>
+
+                <input type="text" name="number" id="button" placeholder="Customer Mobile No"><br><br>
+                <input type="text" name="itemID" id="button" placeholder="Item ID"><br><br>
+                <input type="text" name="Qty" id="button" placeholder="Quantity"><br><br>
+                <input type="text" name="price" id="button" placeholder="Price"><br><br>
+                <button style="background-color: thistle; color: black;border: solid white;font-size: 25px;font-weight: bold">Place Order</button>
+                
+            </fieldset>
+            </form>
+        </div>
+
+        <table style="width:100%; border: 1px solid white; border-collapse: collapse;border-spacing: 5px;
+        margin-bottom: 100px;font-size: 25px;font-weight: bold;color: white;margin-top: 50px;background-color: #6D4C41">">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+            
+        </table>
+        <div class="form">
+            <form id="r">
+                <fieldset>
+                    <input type="text" name="fname" id="button" placeholder="Cash"><br><br>
+                    <input type="text" name="lname" id="button" placeholder="Balance"><br><br>
+                    <input type="text" name="address" id="button" placeholder="Discount"><br><br>
+
+                    <span class="label success" style="font-size: 25px; background-color: #EFEBE9;color: #3E2723;font-weight: bold">Total: 000.00/=</span>
+
+                </fieldset>
+                
+            </form>
+            
+        </div>
+        <div class="btn-group" style="float: right;margin-bottom: 50px;margin-top: 10px;font-size: 20px;font-weight: bold">
+            <button>Clear</button>
+            <button>Renew Order</button>
+            <button>Submit Or</button>
+            
+        </div>
+
+</div>
+    
+</div>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
